@@ -12,14 +12,15 @@ Simultaneous requests must not exceed capacity.
 
 ## Choice
 
-Option 3: `atomic()` plus `select_for_update()` locks the session while ACTIVE bookings are counted and created.
+ `atomic()` plus `select_for_update()` locks the session while ACTIVE bookings are counted and created.
 
 ## Trade-off
 
 Contending requests serialize briefly. Frontend seat counts are only UX; application-only checks race. PostgreSQL protects the duplicate-active invariant with a conditional unique constraint; the transaction protects capacity and start-time checks.
 
 # Decision 2: Duplicate booking protection
-
+# Organise
+i used the pattern structure so that it does not change any thing without my permission and created the file structure.
 ## Problem
 
 One user must not hold two active reservations for a session.
@@ -32,7 +33,7 @@ One user must not hold two active reservations for a session.
 
 ## Choice
 
-Option 3 preserves booking history after cancellation while making the invariant database-enforced.
+preserves booking history after cancellation while making the invariant database-enforced.
 
 ## Trade-off
 
