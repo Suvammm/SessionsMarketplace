@@ -13,6 +13,8 @@ Reviewed and corrected implementation issues encountered during development rath
 
 **How I Verified It:**  
 Verified the Docker Compose configuration, Django checks, migrations, backend tests, frontend build, authentication flow, session creation, booking flow, and concurrency test.
+
+
 **How i tested the API through POSTMAN:**
 i tested the api that it is working with the frontend and communicate with the server and databases and also tested the edge cases.
 Also the google Auth from the google authentication and get the key and clientID and put that in ENV file.
