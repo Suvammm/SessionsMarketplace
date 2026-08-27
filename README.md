@@ -3,7 +3,7 @@
 Created the project as per the Description and it successfully completed.
 ## Overview
 
-A compact marketplace where people browse and book sessions while creators manage their own catalog.
+A compact marketplace where people browse and book sessions while creators manage their own catalog see the architechture for more detail. 
 
 ## Features
 
